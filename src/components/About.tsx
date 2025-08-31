@@ -6,17 +6,22 @@ const About = () => {
     {
       icon: FiUser,
       title: "Professional Background",
-      content: "I'm a passionate software engineer with over 5 years of experience in building scalable web applications. I specialize in modern JavaScript frameworks, cloud technologies, and creating exceptional user experiences. My journey in tech started with a curiosity about how things work on the web, which led me to pursue a degree in Computer Science and eventually work with cutting-edge technologies."
+      content: "Engineering leader with a passion for enabling teams to deliver their best work by aligning systems, processes, and individuals for sustainable, high-quality outcomes. Experienced in managing engineering organizations, developing scalable systems, and fostering development environments that amplify team productivity and reduce friction. Adept at bridging technical execution with business objectives, with hands-on expertise in software development, cloud infrastructure, and process optimization. Proven ability to lead teams across startup and enterprise environments, ensuring that what is built today accelerates what’s possible tomorrow."
     },
     {
       icon: FiTarget,
       title: "Professional Goals",
-      content: "My goal is to continue growing as a full-stack developer while contributing to meaningful projects that solve real-world problems. I'm passionate about clean code, performance optimization, and staying up-to-date with the latest industry trends. I aspire to lead technical teams and mentor junior developers while building innovative solutions."
+      content: "My goal is to continue to grow my experience and expertise in leading engineering teams by taking on new and greater challenges and mastering new technologies and methodologies while delivering functional, high-quality products along the way. "
     },
     {
       icon: FiHeart,
       title: "Personal Interests",
-      content: "When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or sharing knowledge through blog posts and tech talks. I enjoy hiking, reading tech blogs, and experimenting with new programming languages and frameworks. I believe in continuous learning and pushing the boundaries of what's possible in software development."
+      content: [
+        "Craft hobbies – primarily woodworking and leatherworking",
+        "Hobby-scale electronics (Arduino, Raspberry PI) – home automation, LED art, etc.",
+        "Cooking, bread baking",
+        "Music – piano, voice"
+      ]
     }
   ];
 
@@ -56,9 +61,20 @@ const About = () => {
               <h3 className="text-xl font-semibold text-secondary-900 mb-4">
                 {section.title}
               </h3>
-              <p className="text-secondary-700 leading-relaxed">
-                {section.content}
-              </p>
+              {Array.isArray(section.content) ? (
+                <ul className="text-secondary-700 leading-relaxed text-left space-y-2">
+                  {section.content.map((item, itemIndex) => (
+                    <li key={itemIndex} className="flex items-start">
+                      <span className="text-primary-600 mr-2 mt-1">•</span>
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              ) : (
+                <p className="text-secondary-700 leading-relaxed">
+                  {section.content}
+                </p>
+              )}
             </motion.div>
           ))}
         </div>

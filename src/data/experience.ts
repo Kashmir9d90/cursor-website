@@ -6,7 +6,7 @@ export const experience: Experience[] = [
     company: "Applied Research Labs - Space and Geophysics Lab, University of Texas – Austin",
     position: "Head of Software Engineering | Product Owner | Engineering Scientist",
     startDate: "2021-07",
-    endDate: "2024-01",
+    endDate: "",
     location: "Austin, TX",
     description: "Managed software engineering organization of ~70 engineers, with 6 personnel managers as direct reports in an organization supporting $30mil/year in contracts.",
     achievements: [
@@ -33,7 +33,7 @@ export const experience: Experience[] = [
       "Designed and built automation software (including integrated hardware controls), automated factory equipment, and custom-built productivity metrics tracking",
       "Took on various additional roles as needed in a small startup environment"
     ],
-    technologies: ["Automation Software", "Hardware Controls", "Factory Equipment", "Productivity Metrics", "Composite Materials"]
+    technologies: ["C#", "Python", "PLC Programming", "Automation Software", "Hardware Controls",  "Productivity Metrics"]
   },
   {
     id: "3",
@@ -48,6 +48,6 @@ export const experience: Experience[] = [
       "Development and performance tuning on a large-scale MS SQL server instance",
       "Coordinated QA activities with both local and remote (offshore) offices"
     ],
-    technologies: ["Full Stack Development", "MS SQL Server", "Enterprise Software", "Multitenant Architecture", "Performance Tuning", "QA Coordination"]
+    technologies: ["Java", "J2EE", "SQL", "Full Stack Development", "Enterprise Software", "Multitenant Architecture", "Performance Tuning", "QA Coordination"]
   }
 ]; 
