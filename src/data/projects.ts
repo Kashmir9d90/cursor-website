@@ -57,7 +57,7 @@ export const projects: Project[] = [
     description: "Authored research paper on the security implications of brain-computer interfaces during undergraduate studies at UC Berkeley. Combined electrical engineering and computer science principles for innovative security analysis.",
     image: "/projects/bci-security.jpg",
     technologies: ["Research", "Security Analysis", "Brain-Computer Interfaces", "Electrical Engineering", "Computer Science"],
-    liveUrl: undefined,
+    liveUrl: "https://www.usenix.org/conference/usenixsecurity12/technical-sessions/presentation/martinovic",
     githubUrl: undefined,
     featured: false
   }

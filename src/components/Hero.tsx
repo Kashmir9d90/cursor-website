@@ -107,17 +107,6 @@ const Hero = () => {
                 <span>View Projects</span>
               </motion.button>
               
-              <motion.a
-                href={personalInfo.resumeUrl}
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="btn-secondary flex items-center justify-center space-x-2"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FiDownload className="w-5 h-5" />
-                <span>Download Resume</span>
-              </motion.a>
             </motion.div>
 
             {/* Social Links */}

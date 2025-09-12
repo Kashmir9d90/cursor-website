@@ -65,16 +65,6 @@ const Header = () => {
                 {item.label}
               </motion.button>
             ))}
-            <motion.a
-              href={personalInfo.resumeUrl}
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="btn-primary"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Download Resume
-            </motion.a>
           </nav>
 
           {/* Mobile Menu Button */}
@@ -105,14 +95,6 @@ const Header = () => {
                   {item.label}
                 </button>
               ))}
-              <a
-                href={personalInfo.resumeUrl}
-                className="block w-full text-center btn-primary mt-4"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Download Resume
-              </a>
             </div>
           </motion.div>
         )}

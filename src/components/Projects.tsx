@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { FiExternalLink, FiGithub, FiEye } from 'react-icons/fi';
+import { FiExternalLink, FiGithub } from 'react-icons/fi';
 import { projects } from '../data/projects';
 
 const Projects = () => {
@@ -76,26 +76,14 @@ const Projects = () => {
                 className="card group cursor-pointer overflow-hidden"
 
               >
-                {/* Project Image */}
-                <div className="relative overflow-hidden rounded-lg mb-4">
-                  <img
-                    src={project.image}
-                    alt={project.title}
-                    className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
-                    onError={(e) => {
-                      const target = e.target as HTMLImageElement;
-                      target.src = 'https://via.placeholder.com/400x300/3b82f6/ffffff?text=Project';
-                    }}
-                  />
-                  <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition-all duration-300 flex items-center justify-center">
-                    <FiEye className="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                  </div>
-                  {project.featured && (
-                    <div className="absolute top-4 right-4 bg-primary-600 text-white px-2 py-1 rounded-full text-xs font-medium">
+                {/* Featured Badge */}
+                {project.featured && (
+                  <div className="mb-4">
+                    <span className="inline-block bg-primary-600 text-white px-3 py-1 rounded-full text-xs font-medium">
                       Featured
-                    </div>
-                  )}
-                </div>
+                    </span>
+                  </div>
+                )}
 
                 {/* Project Info */}
                 <div className="space-y-3">
@@ -134,7 +122,7 @@ const Projects = () => {
                         onClick={(e) => e.stopPropagation()}
                       >
                         <FiExternalLink className="w-4 h-4" />
-                        <span>Live Demo</span>
+                        <span>Link to paper</span>
                       </a>
                     )}
                     {project.githubUrl && (

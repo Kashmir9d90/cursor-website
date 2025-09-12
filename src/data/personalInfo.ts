@@ -13,7 +13,7 @@ My focus is on building environments where engineering excellence is sustainable
 Adept at bridging technical execution with business objectives, with hands-on expertise in software development, cloud infrastructure, and process optimization. Proven ability to lead teams across startup and enterprise environments, ensuring that what is built today accelerates what's possible tomorrow.
 
 My approach is rooted in a simple belief — that what we build today should not only work, but accelerate what’s possible tomorrow, for the business and for the people who build it.`,
-  avatar: "/bm.jpg",
+  avatar: "/headshot.jpg",
   resumeUrl: "/resume.pdf",
   socialLinks: {
     linkedin: "https://linkedin.com/in/douglas-davies-535b4731",

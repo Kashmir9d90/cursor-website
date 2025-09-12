@@ -38,9 +38,6 @@ const About = () => {
           <h2 className="text-4xl font-bold text-secondary-900 mb-4">
             About Me
           </h2>
-          <p className="text-lg text-secondary-600 max-w-3xl mx-auto">
-            Get to know me better - my background, goals, and what drives me in the world of software development.
-          </p>
         </motion.div>
 
         <div className="grid md:grid-cols-3 gap-8">
@@ -88,20 +85,8 @@ const About = () => {
           className="mt-16 grid md:grid-cols-4 gap-6"
         >
           <div className="text-center">
-            <div className="text-3xl font-bold text-primary-600 mb-2">5+</div>
+            <div className="text-3xl font-bold text-primary-600 mb-2">12</div>
             <div className="text-secondary-600">Years Experience</div>
-          </div>
-          <div className="text-center">
-            <div className="text-3xl font-bold text-primary-600 mb-2">50+</div>
-            <div className="text-secondary-600">Projects Completed</div>
-          </div>
-          <div className="text-center">
-            <div className="text-3xl font-bold text-primary-600 mb-2">20+</div>
-            <div className="text-secondary-600">Technologies</div>
-          </div>
-          <div className="text-center">
-            <div className="text-3xl font-bold text-primary-600 mb-2">100%</div>
-            <div className="text-secondary-600">Client Satisfaction</div>
           </div>
         </motion.div>
       </div>
