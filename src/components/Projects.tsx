@@ -1,11 +1,10 @@
 import { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { FiExternalLink, FiGithub } from 'react-icons/fi';
 import { projects } from '../data/projects';
 
 const Projects = () => {
   const [filter, setFilter] = useState<'all' | 'featured'>('all');
-
 
   const filteredProjects = filter === 'featured' 
     ? projects.filter(project => project.featured)
@@ -60,89 +59,78 @@ const Projects = () => {
         </motion.div>
 
         {/* Projects Grid */}
-        <motion.div
-          layout
-          className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
-        >
-          <AnimatePresence mode="wait">
-            {filteredProjects.map((project, index) => (
-              <motion.div
-                key={project.id}
-                layout
-                initial={{ opacity: 0, scale: 0.8 }}
-                animate={{ opacity: 1, scale: 1 }}
-                exit={{ opacity: 0, scale: 0.8 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="card group cursor-pointer overflow-hidden"
-
-              >
-                {/* Featured Badge */}
-                {project.featured && (
-                  <div className="mb-4">
-                    <span className="inline-block bg-primary-600 text-white px-3 py-1 rounded-full text-xs font-medium">
-                      Featured
-                    </span>
-                  </div>
-                )}
-
-                {/* Project Info */}
-                <div className="space-y-3">
-                  <h3 className="text-xl font-semibold text-secondary-900 group-hover:text-primary-600 transition-colors duration-200">
-                    {project.title}
-                  </h3>
-                  <p className="text-secondary-600 text-sm leading-relaxed">
-                    {project.description}
-                  </p>
-                  
-                  {/* Technologies */}
-                  <div className="flex flex-wrap gap-2">
-                    {project.technologies.slice(0, 4).map((tech, techIndex) => (
-                      <span
-                        key={techIndex}
-                        className="px-2 py-1 bg-secondary-100 text-secondary-700 text-xs rounded-full"
-                      >
-                        {tech}
-                      </span>
-                    ))}
-                    {project.technologies.length > 4 && (
-                      <span className="px-2 py-1 bg-secondary-100 text-secondary-700 text-xs rounded-full">
-                        +{project.technologies.length - 4} more
-                      </span>
-                    )}
-                  </div>
-
-                  {/* Project Links */}
-                  <div className="flex space-x-3 pt-2">
-                    {project.liveUrl && (
-                      <a
-                        href={project.liveUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex items-center space-x-1 text-primary-600 hover:text-primary-700 text-sm font-medium"
-                        onClick={(e) => e.stopPropagation()}
-                      >
-                        <FiExternalLink className="w-4 h-4" />
-                        <span>Link to paper</span>
-                      </a>
-                    )}
-                    {project.githubUrl && (
-                      <a
-                        href={project.githubUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex items-center space-x-1 text-secondary-600 hover:text-secondary-700 text-sm font-medium"
-                        onClick={(e) => e.stopPropagation()}
-                      >
-                        <FiGithub className="w-4 h-4" />
-                        <span>Code</span>
-                      </a>
-                    )}
-                  </div>
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {filteredProjects.map((project, index) => (
+            <div
+              key={project.id}
+              className="card group cursor-pointer overflow-hidden"
+            >
+              {/* Featured Badge */}
+              {project.featured && (
+                <div className="mb-4">
+                  <span className="inline-block bg-primary-600 text-white px-3 py-1 rounded-full text-xs font-medium">
+                    Featured
+                  </span>
                 </div>
-              </motion.div>
-            ))}
-          </AnimatePresence>
-        </motion.div>
+              )}
+
+              {/* Project Info */}
+              <div className="space-y-3">
+                <h3 className="text-xl font-semibold text-secondary-900 group-hover:text-primary-600 transition-colors duration-200">
+                  {project.title}
+                </h3>
+                <p className="text-secondary-600 text-sm leading-relaxed">
+                  {project.description}
+                </p>
+                
+                {/* Technologies */}
+                <div className="flex flex-wrap gap-2">
+                  {project.technologies.slice(0, 4).map((tech, techIndex) => (
+                    <span
+                      key={techIndex}
+                      className="px-2 py-1 bg-secondary-100 text-secondary-700 text-xs rounded-full"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                  {project.technologies.length > 4 && (
+                    <span className="px-2 py-1 bg-secondary-100 text-secondary-700 text-xs rounded-full">
+                      +{project.technologies.length - 4} more
+                    </span>
+                  )}
+                </div>
+
+                {/* Project Links */}
+                <div className="flex space-x-3 pt-2">
+                  {project.liveUrl && (
+                    <a
+                      href={project.liveUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center space-x-1 text-primary-600 hover:text-primary-700 text-sm font-medium"
+                      onClick={(e) => e.stopPropagation()}
+                    >
+                      <FiExternalLink className="w-4 h-4" />
+                      <span>Link to paper</span>
+                    </a>
+                  )}
+                  {project.githubUrl && (
+                    <a
+                      href={project.githubUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center space-x-1 text-secondary-600 hover:text-secondary-700 text-sm font-medium"
+                      onClick={(e) => e.stopPropagation()}
+                    >
+                      <FiGithub className="w-4 h-4" />
+                      <span>Code</span>
+                    </a>
+                  )}
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
 
         {/* Call to Action */}
         <motion.div
@@ -175,4 +163,4 @@ const Projects = () => {
   );
 };
 
-export default Projects; 
+export default Projects;

@@ -82,7 +82,7 @@ const About = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
           viewport={{ once: true }}
-          className="mt-16 grid md:grid-cols-4 gap-6"
+          className="mt-16 flex justify-center"
         >
           <div className="text-center">
             <div className="text-3xl font-bold text-primary-600 mb-2">12</div>
