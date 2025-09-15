@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { FiDownload, FiMail, FiGithub, FiLinkedin, FiTwitter } from 'react-icons/fi';
+import { FiMail, FiGithub, FiLinkedin, FiTwitter } from 'react-icons/fi';
 import { personalInfo } from '../data/personalInfo';
 
 const Hero = () => {
