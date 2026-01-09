@@ -16,7 +16,7 @@ export const projects: Project[] = [
     title: "Engineering Organization Management Platform",
     description: "Led development of comprehensive process, standards, and best practices for a 70-person engineering organization supporting $30M/year in contracts. Implemented hiring and evaluation systems, project planning tools, and budget management processes.",
     image: "/projects/engineering-management.jpg",
-    technologies: ["Process Optimization", "Team Leadership", "Project Management", "Budget Management", "Hiring Systems"],
+    technologies: ["Peformance Management", "Hiring & Evaluation", "Team Leadership", "Project Management", "Budget Management"],
     liveUrl: undefined,
     githubUrl: undefined,
     featured: true

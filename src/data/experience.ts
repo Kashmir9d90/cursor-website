@@ -4,34 +4,35 @@ export const experience: Experience[] = [
   {
     id: "1",
     company: "Applied Research Labs - Space and Geophysics Lab, University of Texas – Austin",
-    position: "Head of Software Engineering | Product Owner | Engineering Scientist",
+    position: "Senior Software Engineering Manager",
     startDate: "2021-07",
     endDate: "",
     location: "Austin, TX",
-    description: "Managed software engineering organization of ~70 engineers, with 6 personnel managers as direct reports in an organization supporting $30mil/year in contracts.",
+    description: "Direct lab-wide software engineering strategy, execution, and governance across $30M in active contracts while serving as product owner, technical lead, and individual contributor.",
     achievements: [
-      "Managed software engineering organization of ~70 engineers, with 6 personnel managers as direct reports in an organization supporting $30mil/year in contracts",
-      "Established process, standards, and best practices in a recently reorganized business unit",
-      "Led hiring and personnel evaluation for the software development department",
-      "As product owner, maintained project plan, schedule, and budget for a team of six engineers developing a software package successfully deployed to new monitoring installations across US territories",
-      "Worked as a senior individual contributor designing and developing systems (primarily C++ and Python) for high-rate data processing and analysis on-hardware deployed at sites world-wide",
-      "Developed systems migrating large-scale on-premise data storage and processing to run in secure cloud environments",
-      "Software development and hardware integration for mission critical software-defined radio global navigation monitoring systems delivered to DoD Sponsors"
+      "Provide strategic leadership to diverse technical team by driving 40% workforce growth, process consistency, and delivery performance while administering additional training.",
+      "Recovered mission-critical system on time and under budget by re-baselining scope, staffing, and architecture for hardware and software program previously over one year delayed.",
+      "Eliminate operational silos by creating SOPs and engineering processes, operating models, and best practices following organizational realignment, improving cross-team coordination.",
+      "Institutionalize consistent performance feedback across company by designing structured review and coaching framework later adopted lab-wide, improving feedback quality.",
+      "Build robust workforce infrastructure supporting rapid staff expansion by standardizing onboarding, training, and transition frameworks, maximizing production and engagement.",
+      "Demonstrated excellent problem-solving skills by leading and resolving sensitive workforce decisions including targeted reductions and extended performance remediation.",
+      "Architect scalable processing pipelines across deployed and cloud platforms while guiding all aspects of system design, throughput optimization, and on-premise to AWS transition.",
+      "Own shared software platform supporting multiple teams and products while serving as subject matter expert, writing majority of codebase while leading design reviews."
     ],
     technologies: ["C++", "Python", "Cloud Infrastructure", "Software-Defined Radio", "High-Rate Data Processing", "DoD Systems"]
   },
   {
     id: "2",
     company: "Composites for Infrastructure",
-    position: "Senior Engineer, Technology Development and Production",
+    position: "Senior Software Engineer",
     startDate: "2017-01",
     endDate: "2020-12",
     location: "California and Texas",
-    description: "Developed and improved technologies for a new approach to underground infrastructure repairs using advanced composite materials.",
+    description: "Modernized manufacturing workflows through custom automation solutions by validating software-driven controls for factory operations, reducing manual intervention.",
     achievements: [
-      "Developed and improved technologies for a new approach to underground infrastructure repairs using advanced composite materials",
-      "Designed and built automation software (including integrated hardware controls), automated factory equipment, and custom-built productivity metrics tracking",
-      "Took on various additional roles as needed in a small startup environment"
+      "Exemplified exceptional critical thinking by implementing productivity metrics and reporting logic to measure processing capacity, utilization, and operational performance.",
+      "Created C# applications interfacing with programmable logic controllers to synchronize hardware behavior and ensure consistent execution while determining optimal solutions.",
+      "Expanded duties beyond core role within early-stage startup, assuming cross-functional ownership across technical and operational functions to support evolving business priorities"
     ],
     technologies: ["C#", "Python", "PLC Programming", "Automation Software", "Hardware Controls",  "Productivity Metrics"]
   },
@@ -42,11 +43,11 @@ export const experience: Experience[] = [
     startDate: "2013-06",
     endDate: "2016-09",
     location: "California",
-    description: "Front- and back- end development on an enterprise-scale multitenant shipping/transportation management product.",
+    description: "Expanded enterprise platform adoption by building core functionality for multitenant supplychain product supporting global shipping workflows used by 94,000+ organizations.",
     achievements: [
-      "Front- and back- end development on an enterprise-scale multitenant shipping/transportation management product",
-      "Development and performance tuning on a large-scale MS SQL server instance",
-      "Coordinated QA activities with both local and remote (offshore) offices"
+      "Optimized queries, indexing, and database interactions across large Microsoft SQL Server instances to improve responsiveness while maintaining high-quality control standards.",
+      "Developed server-side components supporting complex business logic, building Java J2EE and Spring Boot services managing multi-tenant data isolation and operations.",
+      "Accelerated deployment cycles by partnering with interdisciplinary teams and offshore QAto validate functionality and reduce post-deployment issues through coordinated testing."
     ],
     technologies: ["Java", "J2EE", "SQL", "Full Stack Development", "Enterprise Software", "Multitenant Architecture", "Performance Tuning", "QA Coordination"]
   }

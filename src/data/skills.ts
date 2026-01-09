@@ -10,11 +10,12 @@ export const skills: Skill[] = [
   { name: "Docker", level: 85, category: "tool" },
   { name: "AWS", level: 80, category: "tool" },
   { name: "Git", level: 90, category: "tool" },
-  { name: "Atlassian (Jira)", level: 85, category: "tool" },
+  { name: "Atlassian (JIRA)", level: 85, category: "tool" },
   { name: "CI/CD Pipelines", level: 85, category: "tool" },
 
   // Project Management & Leadership
   { name: "Team Leadership", level: 95, category: "soft" },
+  { name: "Performance Management", level: 93, category: "soft" },
   { name: "Agile/Scrum", level: 90, category: "soft" },
   { name: "Project Planning", level: 90, category: "soft" },
   { name: "Process Optimization", level: 85, category: "soft" },
